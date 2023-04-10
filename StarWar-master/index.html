@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarWar</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="icon" href="./images/hero3.png">
+</head>
+<body>
+    <audio id="trueAudio">
+        <source src="./audio/true.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="falseAudio">
+        <source src="./audio/false.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="bg">
+        <source src="./audio/background.mp3" type="audio/mpeg">
+    </audio>
+    <div class="startcont">
+        <div class="userlogo">
+                <p class="userlogintitle" >Please enter your name:</p>
+            <div class="userlogininput">_</div>
+            <div class="userlogincondition">
+                <div class="backspace">
+                    <div class="icon1">
+                        <img class="backicon delete" src="./images/del.png">
+                    </div>
+                    <div class="icon1">
+                        <img class="backicon backs" src="./images/backs.png">
+                    </div>
+                </div>
+                <div class="condition">
+                    Only English alphabet (A-Z) <br>
+                    Min. 3 char
+                </div>
+                
+            </div>
+            <div class="userselectchar">
+                <p class="userlogintitle" >Please select your hero:</p>
+            </div>
+            <div class="userchar">
+                <div data-hero="1" id="h1" class="hero1 a"><img src="images/hero1.jpg">Luke Skywalker</div>
+                <div data-hero="2" id="h2" class="hero2 a"><img src="images/hero2.jpg">Jedi Revan</div>
+                <div data-hero="3" id="h3" class="hero3 a"><img src="images/hero3.png">Obi-Wan Kenobi</div>
+                <div data-hero="4" id="h4" class="hero4 a"><img src="images/hero 4.jpg">Darth Nihilus</div>
+            </div>
+            <div class="userstartbtn">START</div>
+        </div>
+    </div>
+    <div class="logo">Star WAR RPG!</div>
+        <div class="cont1">
+            <div class="center">
+                <div class="solPart">
+                    <div class="solImage">
+                        <img class="yourHeroIcon" src="./images/startImage.png">
+                    </div>
+                    <div class="solHealth">
+                        <div class="solUserName">
+                            -
+                        </div>
+                        <div class="solHealthCount">
+                            -
+                        </div>
+                        <div class="solHealthMeter">
+                            <meter min="0" max="1000" value="1000" class="solMeter" ></meter>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ortaPart">
+                    <div class="vs">
+                        VS
+                    </div>
+                    <div class="level">
+                        Level 1
+                    </div>
+
+                </div>
+                <div class="sagPart">
+                    
+                    <div class="sagHealth">
+                        <div class="sagUserName">
+                            COMPUTER
+                        </div>
+                        <div class="sagHealthCount">
+                            -
+                        </div>
+                        <div class="sagHealthMeter">
+                            <meter min="0" max="1000" value="1000" class="sagMeter" ></meter>
+                        </div>
+                    </div>
+                    <div class="sagImage">
+                        <img class="yourHeroIcon" src="./images/computer.png">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="contAttack">
+            <div class="range">
+                <div class="a5 z"></div>
+                <div class="a4 z"></div>
+                <div class="a3  z"></div>
+                <div class="a2 z"></div>
+                <div class="a1 z"></div>
+                <div class="a0 z"></div>
+                <div class="a12 z"></div>
+                <div class="a22 z"></div>
+                <div class="a32 z"></div>
+                <div class="a42 z"></div>
+                <div class="a52 z"></div>
+                <div class="attack"></div>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="pause">ATTACK</button>
+        </div>
+        <div class="homePageCont2">
+            <div class="homePageSol">
+                <div class="homePageImageDiv"><img class="homePageImage" src="./images/startImage.png"></div>
+            </div>
+            <div class="scoreHomePage">
+                <div class="scoreUser">
+                    -
+                </div>
+                <div class="scoreBetwen">
+                    vs
+                </div>
+                <div class="scoreComp">
+                    -
+                </div>
+            </div>
+            <div class="homePageSag">
+                <div class="homePageImageDiv homePageComputer"><img class="homePageImage2" src="./images/comp.png"></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+
+        </div>
+
+
+    <script src="./js/java.js"></script>
+    <script src="./js/java2.js"></script>
+</body>
+</html>

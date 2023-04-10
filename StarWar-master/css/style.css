@@ -1,0 +1,457 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+@font-face {
+    font-family: userlogin;
+    src: url(../font/ZenDots-Regular.ttf);
+}
+@font-face {
+    font-family: karantina;
+    src: url(../font/Karantina-Regular.ttf);
+}
+@font-face {
+    font-family: Coda;
+    src: url(../font/CodaCaption-ExtraBold.ttf);
+}
+@keyframes userchar {
+    from{
+        width: 60px;
+        height: 90px;
+    }
+    to{
+        width: 66px;
+        height: 99px;
+        box-shadow: 1px 0px 10px 1px blue;
+    }
+}
+
+.startcont{
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+
+}
+.userlogo{
+    border-radius: 10px;
+    box-shadow: 1px 0px 10px 1px blue;
+    width: 500px;
+    height: auto;
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.userlogintitle{
+    font-family: userlogin;
+    text-shadow: 3px 3px 3px  white;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 5px blue;
+    color: white;
+    margin-top: 8px;
+}
+
+.userlogininput{
+    width: 80%;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 5px;
+    box-shadow: 1px 0px 10px 1px white;
+    font-family: userlogin;
+    
+}
+.userlogincondition{
+    margin: 10px;
+    color: red;
+    display: flex;
+    width: 95%;
+    font-family: coda;
+    font-size: 0.5em;
+    position: relative;
+}
+.backspace{
+    width: auto;
+    height: 20px;
+    color: rgb(47, 0, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.backicon{
+    width: 30px;
+    height: 100%;
+}
+.icon1{
+    margin-left: 5px;
+}
+.backicon:hover{
+    box-shadow: 1px 0px 10px 1px blue;
+    cursor: pointer;
+}
+
+
+
+.condition{
+    text-align: right;
+    width: 100%;
+    float: right;
+}
+
+.userchar{
+    color: white;
+    width: 95%;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.a{
+    border: 1px solid blue;
+    width: 60px;
+    height: 90px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgba(211, 211, 211, 0.5);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6em;
+    align-self: center;
+    justify-self: center;
+    color: blue;
+    font-weight: bold;
+}
+.a:hover{
+    cursor: pointer;
+    animation: userchar 200ms;
+    animation-fill-mode: forwards;
+}
+.userstartbtn{
+    min-width: 100px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(135, 206, 250, 0.836);
+    margin: 20px;
+    font-family: coda;
+}
+.userstartbtn:hover{
+    box-shadow: 1px 0px 10px 1px blue;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+    
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4em;
+    font-family: Coda;
+}
+
+.container{
+    border: 1px solid red;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 60px;
+    
+}
+
+.cont1{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.center{
+    max-width: 800px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+
+
+.solPart{
+    width: 250px;
+    height: 60px;
+    box-sizing: border-box;
+    background-color: rgba(128, 128, 128, 0.61);
+    border-radius: 30px 0px 0px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+.solImage{
+    display: flex;
+    align-items: center;
+}
+.yourHeroIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+} 
+
+.solHealth{
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.solHealthMeter{
+    display: flex;
+    justify-content: center;
+}
+.solMeter{
+    width: 90%;
+    height: 15px;
+}
+.solUserName{
+    text-align: center;
+    font-weight: bold;
+    color: darkblue;
+    text-shadow: 2px 2px 3px white;
+    font-family: coda;
+    font-size: 0.7em;
+}
+.solHealthCount{
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+.ortaPart{
+    width: 200px;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.61);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: coda;
+    font-size: 1.2em;
+}
+
+
+
+
+
+.sagPart{
+    width: 250px;
+    height: 60px;
+    box-sizing: border-box;
+    background-color: rgba(128, 128, 128, 0.61);
+    border-radius: 0px 30px 30px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+.sagImage{
+    display: flex;
+    align-items: center;
+}
+.yourHeroIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+} 
+
+.sagHealth{
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.sagHealthMeter{
+    display: flex;
+    justify-content: center;
+}
+.sagMeter{
+    width: 90%;
+    height: 15px;
+    direction: rtl;
+}
+.sagUserName{
+    text-align: center;
+    font-weight: bold;
+    color: darkblue;
+    text-shadow: 2px 2px 3px white;
+    font-family: coda;
+    font-size: 0.7em;
+}
+.sagHealthCount{
+    text-align: right;
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+.ortaPart{
+    width: 200px;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.61);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: coda;
+    font-size: 1.2em;
+}
+
+.homePageCont2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.homePageImageDiv{
+    width: 250px;
+    border-radius: 5px;
+    height: 250px;
+    
+}
+.homePageImage{
+    height: 100%;
+}
+.homePageImage2{
+    height: 100%;
+}
+
+.scoreHomePage{
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.scoreBetwen{
+    font-size: 1.5em;
+    font-family: Coda;
+}
+.scoreUser{
+    width: 100%;
+    text-align: left;
+    font-size: 2.5em;
+    font-family: Coda;
+    padding-top: 50px;
+    color: red;
+}
+.scoreComp{
+    width: 100%;
+    text-align: right;
+    font-size: 2.5em;
+    font-family: Coda;
+    padding-top: 50px;
+    color: red;
+}
+
+@media screen and (max-width: 820px) {
+    .solPart{
+        width: 100%;
+        border-radius: 30px 30px 0px 0px;
+    }
+    .ortaPart{
+        width: 100%;
+    }
+    .sagPart{
+        width: 100%;
+        border-radius: 0px 0px 30px 30px;
+    }
+    .logo{
+        font-size: 3em;
+    }
+    .center{
+        
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .homePageCont2{
+        margin: 20px;
+        width: 100%;
+    }
+    .homePageImageDiv{
+        width: 70%;
+    }
+    .homePageSag{
+        width: 70%;
+    }
+    .scoreBetwen{
+        width: 70%;
+    }
+}

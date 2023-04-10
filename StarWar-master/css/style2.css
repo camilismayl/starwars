@@ -1,0 +1,105 @@
+.contAttack{
+    width: 400px;
+    height: 20px;
+    margin: 40px auto;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.pause{
+    width: 150px;
+    margin: 0 auto;
+    font-family: Coda;
+    font-size: 1.2em;
+    box-shadow: 2px 2px red;
+    cursor: pointer;
+}
+.range{
+    position: absolute;
+    width: 400px;
+    height: 15px;
+    margin: 0 auto;
+    border: 1px solid green;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.attack{
+    position: relative;
+    width: 2px;
+    height: 10px;
+    background-color: white;
+    left: 0px;
+    animation: attack 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+.z{
+    position: absolute;
+    width: 40px;
+    height: 13px;
+}
+.a5{
+    background-color: darkgreen;
+}
+.a4{
+    left: 40px;
+    background-color: green;
+}
+.a3{
+    left: 80px;
+    background-color: yellow;
+}
+.a2{
+    left: 120px;
+    background-color: rgb(255, 102, 0);
+}
+.a1{
+    width: 30px;
+    left: 160px;
+    background-color: rgb(255, 0, 0);
+}
+.a0{
+    width: 20px;
+    left: 190px;
+    background-color: darkred;
+}
+.a12{
+    width: 30px;
+    left: 210px;
+    background-color: rgb(255, 0, 0);
+}
+.a22{
+    left: 240px;
+    background-color: rgb(255, 102, 0);
+}
+.a32{
+    left: 280px;
+    background-color: yellow;
+}
+.a42{
+    left: 320px;
+    background-color: green;
+}
+.a52{
+    left: 360px;
+    background-color: darkgreen;
+}
+@keyframes attack{
+    form{
+        left: 0px
+    }
+    to{
+        left: 398px;
+    }
+}
+
+.attack:hover{
+    animation-play-state: paused;
+    box-shadow: 2px 2px 5px red;
+}
